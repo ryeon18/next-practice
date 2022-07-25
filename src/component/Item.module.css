@@ -1,0 +1,21 @@
+.wrap {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+.info_item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.num_price {
+  font-size: 17px;
+  color: blue;
+}
+
+.desc {
+  border-bottom: 1px solid lightgray;
+}
