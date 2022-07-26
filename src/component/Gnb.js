@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Menu } from "semantic-ui-react";
+import { Menu, Sticky } from "semantic-ui-react";
 
 export default function Gnb() {
   const router = useRouter();
@@ -30,25 +30,38 @@ export default function Gnb() {
   }
 
   return (
-    <Menu inverted>
-      <Menu.Item name="home" active={activeItem === "home"} onClick={goLink} />
+    <div
+      style={{
+        position: "sticky",
+        top: "0",
+        zIndex: "10",
+        backgroundColor: "orange",
+      }}
+    >
+      <Menu inverted>
+        <Menu.Item
+          name="home"
+          active={activeItem === "home"}
+          onClick={goLink}
+        />
 
-      <Menu.Item
-        name="recent-view-products"
-        active={activeItem === "recent-view-products"}
-        onClick={goLink}
-      />
-      <Menu.Item
-        name="about"
-        active={activeItem === "about"}
-        onClick={goLink}
-      />
-      <Menu.Item
-        name="admin"
-        active={activeItem === "admin"}
-        onClick={goLink}
-      />
-    </Menu>
+        <Menu.Item
+          name="recent-view-products"
+          active={activeItem === "recent-view-products"}
+          onClick={goLink}
+        />
+        <Menu.Item
+          name="about"
+          active={activeItem === "about"}
+          onClick={goLink}
+        />
+        <Menu.Item
+          name="admin"
+          active={activeItem === "admin"}
+          onClick={goLink}
+        />
+      </Menu>
+    </div>
   );
 }
 
