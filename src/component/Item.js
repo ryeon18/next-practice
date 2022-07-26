@@ -1,8 +1,35 @@
+import { useEffect, useState } from "react";
 import { Button, Header } from "semantic-ui-react";
 import styles from "./Item.module.css";
+import { useRouter } from "next/router";
 
 export default function Item({ item }) {
   const { image_link, name, price, description, category, product_type } = item;
+
+  const router = useRouter();
+  const { id } = router.query;
+
+  console.log("id", id);
+
+  useEffect(() => {
+    let list = localStorage.getItem("items");
+
+    if (list == null) {
+      list = [];
+    } else {
+      list = JSON.parse(list);
+    }
+
+    const ItemId = list.find((data) => data.itemId === id);
+
+    console.log("itemId", ItemId);
+    if (!ItemId) {
+      list.unshift({ itemId: id });
+    }
+
+    localStorage.setItem("items", JSON.stringify(list));
+  }, []);
+
   return (
     <>
       <div className={styles.wrap}>

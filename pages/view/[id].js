@@ -5,7 +5,7 @@ import { Loader } from "semantic-ui-react";
 import Item from "../../src/component/Item";
 import Head from "next/head";
 
-const Post = ({ item, name }) => {
+const Post = ({ item, name, id }) => {
   return (
     <>
       {item && (
@@ -15,7 +15,7 @@ const Post = ({ item, name }) => {
             <meta name="description" context={item.description}></meta>
           </Head>
           {name} 환경입니다.
-          <Item item={item} />
+          <Item item={item} id={id} />
         </>
       )}
     </>
@@ -35,6 +35,7 @@ export async function getServerSideProps(context) {
     props: {
       item: data,
       name: process.env.name,
+      id: id,
     },
   };
 }

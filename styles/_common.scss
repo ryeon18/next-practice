@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+input {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@for $i from 0 through 100 {
+  .m-top-#{$i} {
+    margin-top: #{$i}px;
+  }
+
+  .m-right-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+  .m-bottom-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+
+  .m-left-#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .margin-#{$i} {
+    margin: #{$i}px;
+  }
+
+  .p-top-#{$i} {
+    padding-top: #{$i}px;
+  }
+
+  .p-right-#{$i} {
+    padding-right: #{$i}px;
+  }
+
+  .p-bottom-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+
+  .p-left-#{$i} {
+    padding-left: #{$i}px;
+  }
+
+  .padding-#{$i} {
+    padding: #{$i}px;
+  }
+
+  .width-#{$i} {
+    width: #{$i}px;
+  }
+
+  .height-#{$i} {
+    height: #{$i}px;
+  }
+}

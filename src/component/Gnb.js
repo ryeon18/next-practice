@@ -11,7 +11,11 @@ export default function Gnb() {
     activeItem = "about";
   } else if (router.pathname === "/admin") {
     activeItem = "admin";
+  } else if (router.pathname === "/recent-view") {
+    activeItem = "recent-view-products";
   }
+
+  console.log("pathName", router.pathname);
 
   function goLink(e, data) {
     if (data.name === "home") {
@@ -20,12 +24,20 @@ export default function Gnb() {
       router.push("/about");
     } else if (data.name === "admin") {
       router.push("/admin");
+    } else if (data.name === "recent-view-products") {
+      router.push("/recent-view");
     }
   }
 
   return (
     <Menu inverted>
       <Menu.Item name="home" active={activeItem === "home"} onClick={goLink} />
+
+      <Menu.Item
+        name="recent-view-products"
+        active={activeItem === "recent-view-products"}
+        onClick={goLink}
+      />
       <Menu.Item
         name="about"
         active={activeItem === "about"}
