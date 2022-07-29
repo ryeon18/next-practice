@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import "../styles/main.scss";
 import "semantic-ui-css/semantic.min.css";
-import Top from "../src/component/Top";
-import Gnb from "../src/component/Gnb";
-import Footer from "../src/component/Footer";
+import Top from "../component/Top";
+import Gnb from "../component/Gnb";
+import Footer from "../component/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (

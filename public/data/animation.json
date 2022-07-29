@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Crulla",
+    "image": "./images/animation/animation1.png",
+    "price": 4000
+  },
+  {
+    "id": 2,
+    "name": "Merida",
+    "image": "./images/animation/animation2.png",
+    "price": 7000
+  },
+  {
+    "id": 3,
+    "name": "Mulan",
+    "image": "./images/animation/animation3.png",
+    "price": 7000
+  },
+  {
+    "id": 4,
+    "name": "Micky mouse",
+    "image": "./images/animation/animation4.jpg",
+    "price": 6000
+  },
+  {
+    "id": 5,
+    "name": "Sleeping beauty",
+    "image": "./images/animation/animation5.jpg",
+    "price": 5000
+  },
+  {
+    "id": 6,
+    "name": "Elsa",
+    "image": "./images/animation/animation6.png",
+    "price": 4000
+  },
+  {
+    "id": 7,
+    "name": "Aladdin",
+    "image": "./images/animation/animation7.jpg",
+    "price": 5000
+  },
+  {
+    "id": 8,
+    "name": "Micky & Minnie",
+    "image": "./images/animation/animation8.jpg",
+    "price": 8000
+  }
+]

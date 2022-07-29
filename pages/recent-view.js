@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Header } from "semantic-ui-react";
-import ItemList from "../src/component/ItemList";
+import ItemList from "../component/ItemList";
 
 export default function RecentViewProducts({ item, res }) {
   const [itemList, setItemList] = useState([]);
@@ -14,6 +14,15 @@ export default function RecentViewProducts({ item, res }) {
       return;
     }
   }, []);
+
+  // useEffect(() => {
+  //   if (itemList !== undefined) {
+  //     const apiURL = `http://makeup-api.herokuapp.com/api/v1/products/${id}.json`;
+  //     const res = axios.get(apiURL);
+  //     const data = res.data;
+  //     console.log("data", data);
+  //   }
+  // }, [itemList]);
 
   return (
     <>
@@ -29,3 +38,32 @@ export default function RecentViewProducts({ item, res }) {
     </>
   );
 }
+
+// export async function getStaticPaths() {
+//   const apiURL = process.env.apiURL;
+//   const res = await axios.get(apiURL);
+//   const data = res.data;
+
+//   return {
+//     paths: data.slice(0, 9).map((item) => ({
+//       params: {
+//         id: item.id.toString(),
+//       },
+//     })),
+//     fallback: true,
+//   };
+// }
+
+// export async function getStaticProps(context) {
+//   const id = context.params.id;
+//   const apiURL = `http://makeup-api.herokuapp.com/api/v1/products/${id}.json`;
+//   const res = await axios.get(apiURL);
+//   const data = res.data;
+
+//   return {
+//     props: {
+//       item: data,
+//       name: process.env.name,
+//     },
+//   };
+// }

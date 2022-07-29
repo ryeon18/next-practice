@@ -2,7 +2,7 @@ import Axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Loader } from "semantic-ui-react";
-import Item from "../../src/component/Item";
+import Item from "../../component/Item";
 import Head from "next/head";
 
 const Post = ({ item, name }) => {
