@@ -1,4 +1,4 @@
-import Axios from "axios";
+import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Loader } from "semantic-ui-react";
@@ -28,7 +28,7 @@ export async function getServerSideProps(context) {
   console.log("context", context);
   const id = context.params.id;
   const apiURL = `http://makeup-api.herokuapp.com/api/v1/products/${id}.json`;
-  const res = await Axios.get(apiURL);
+  const res = await axios.get(apiURL);
   const data = res.data;
 
   return {

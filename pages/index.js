@@ -6,15 +6,23 @@ import styles from "../styles/Home.module.css";
 import { Header, Divider, Loader } from "semantic-ui-react";
 import axios from "axios";
 
-export default function Home() {
-  const [list, setList] = useState([]);
-  useEffect(() => {
-    fetch("/data/animation.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setList(data);
-      });
-  }, [list]);
+export default function Home({ list }) {
+  //   const [list, setList] = useState([]);
+  //   useEffect(() => {
+  //     fetch("/data/animation.json")
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         setList(data);
+  //       });
+  //   }, [list]);
+
+  //   useEffect(() => {
+  //     fetch("/data/art.json")
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         setList(data);
+  //       });
+  //   }, [list]);
 
   return (
     <div>
@@ -24,28 +32,29 @@ export default function Home() {
       </Head>
 
       <Header as="h3" style={{ paddingTop: 40 }}>
-        애니메이션 리스트
+        베스트 상품
       </Header>
       <Divider />
-      <ItemList list={list} />
+      <ItemList list={list.slice(0, 9)} />
+      {/* <ItemList list={list} /> */}
       <Header as="h3" style={{ paddingTop: 40 }}>
-        예술작품 리스트
+        신상품
       </Header>
       <Divider />
-      {/* <ItemList list={list.slice(9)} /> */}
+      <ItemList list={list.slice(9)} />
     </div>
   );
 }
 
-// export async function getStaticProps() {
-//   const apiURL = process.env.apiURL;
-//   const res = await axios.get(apiURL);
-//   const data = res.data;
+export async function getStaticProps() {
+  const apiURL = process.env.apiURL;
+  const res = await axios.get(apiURL);
+  const data = res.data;
 
-//   return {
-//     props: {
-//       list: data,
-//       name: process.env.name,
-//     },
-//   };
-// }
+  return {
+    props: {
+      list: data,
+      name: process.env.name,
+    },
+  };
+}

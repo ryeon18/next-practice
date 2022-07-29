@@ -28,7 +28,7 @@ export default function RecentViewProducts({ item, res }) {
     <>
       <Header as="h3">최근 본 상품</Header>
       {itemList.length > 0 ? (
-        itemList.map((data) => {
+        itemList.slice(0, 9).map((data) => {
           return <p key={data.itemId}>상품아이디 : {data.itemId}</p>;
         })
       ) : (

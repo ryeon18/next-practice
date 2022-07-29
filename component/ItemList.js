@@ -13,13 +13,17 @@ export default function ItemList({ list }) {
                 <a>
                   <div className="centered col m-top-20">
                     <img
-                      src={item.image}
+                      src={item.image_link}
                       alt={item.name}
                       className="item-image"
                     />
-                    <strong>{item.name}</strong>
-                    {/* <span>{item.category} {item.product_type}</span> */}
-                    <strong>₩ {item.price.toLocaleString()}</strong>
+                    <strong className="item-name">{item.name}</strong>
+                    <span className="txt_info">
+                      {item.category} {item.product_type}
+                    </span>
+                    <strong className="num_price">
+                      ₩ {item.price.toLocaleString()}
+                    </strong>
                   </div>
                 </a>
               </Link>

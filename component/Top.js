@@ -8,7 +8,7 @@ export default function Top() {
         <div style={{ flex: "100px 0 0" }}>
           <Image src="/images/catLogo.png" alt="logo" width={90} height={70} />
         </div>
-        <Header as="h1">해피하우스</Header>
+        <Header as="h1">해피 코스메틱</Header>
       </div>
     </div>
   );

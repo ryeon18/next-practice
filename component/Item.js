@@ -9,8 +9,6 @@ export default function Item({ item }) {
   const router = useRouter();
   const { id } = router.query;
 
-  console.log("id", id);
-
   useEffect(() => {
     let list = localStorage.getItem("items");
 
@@ -22,7 +20,6 @@ export default function Item({ item }) {
 
     const ItemId = list.find((data) => data.itemId === id);
 
-    console.log("itemId", ItemId);
     if (!ItemId) {
       list.unshift({ itemId: id });
     }
@@ -46,6 +43,7 @@ export default function Item({ item }) {
             </span>
           </div>
           <Button
+            className="ui button"
             style={{ marginTop: 20, backgroundColor: "orange", color: "white" }}
           >
             구매하기
