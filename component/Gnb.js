@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Menu, Sticky } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 
 export default function Gnb() {
   const router = useRouter();
@@ -15,17 +15,17 @@ export default function Gnb() {
     activeItem = "recent-view-products";
   }
 
-  console.log("pathName", router.pathname);
-
   function goLink(e, data) {
     if (data.name === "home") {
       router.push("/");
+    } else if (data.name === "category") {
+      router.push("/category");
+    } else if (data.name === "recent-view-products") {
+      router.push("/recent-view");
     } else if (data.name === "about") {
       router.push("/about");
     } else if (data.name === "admin") {
       router.push("/admin");
-    } else if (data.name === "recent-view-products") {
-      router.push("/recent-view");
     }
   }
 
@@ -42,6 +42,12 @@ export default function Gnb() {
         <Menu.Item
           name="home"
           active={activeItem === "home"}
+          onClick={goLink}
+        />
+
+        <Menu.Item
+          name="category"
+          active={activeItem === "category"}
           onClick={goLink}
         />
 

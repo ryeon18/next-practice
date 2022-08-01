@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "전체상품",
+    "image": "./images/animation/animation1.png"
+  },
+  {
+    "id": 2,
+    "name": "파운데이션",
+    "image": "./images/animation/animation2.png"
+  },
+  {
+    "id": 3,
+    "name": "아이",
+    "image": "./images/animation/animation3.png"
+  },
+  {
+    "id": 4,
+    "name": "립",
+    "image": "./images/animation/animation4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "마스카라",
+    "image": "./images/animation/animation5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "블러셔",
+    "image": "./images/animation/animation6.png"
+  }
+]

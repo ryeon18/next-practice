@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "아이섀도우",
+    "image": "./images/animation/animation1.png"
+  },
+  {
+    "id": 2,
+    "name": "아이라이너",
+    "image": "./images/animation/animation2.png"
+  },
+  {
+    "id": 3,
+    "name": "마스카라",
+    "image": "./images/animation/animation3.png"
+  }
+]

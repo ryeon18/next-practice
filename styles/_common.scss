@@ -69,4 +69,8 @@ a {
   .height-#{$i} {
     height: #{$i}px;
   }
+
+  .vertical-middle {
+    vertical-align: -webkit-baseline-middle;
+  }
 }
