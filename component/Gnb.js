@@ -30,14 +30,7 @@ export default function Gnb() {
   }
 
   return (
-    <div
-      style={{
-        position: "sticky",
-        top: "0",
-        zIndex: "10",
-        backgroundColor: "orange",
-      }}
-    >
+    <div className="gnb">
       <Menu inverted>
         <Menu.Item
           name="home"

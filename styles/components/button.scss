@@ -1,0 +1,803 @@
+// 버튼 사이즈
+.primary-button-Xlarge {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 700;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-button-font14 {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 400;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-button-medium {
+  border: none;
+  border-radius: 6px;
+  height: 37px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-button-small {
+  border: none;
+  border-radius: 4px;
+  height: 29px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-md-button-Xlarge {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 500;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-md-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-md-button-medium {
+  border: none;
+  border-radius: 6px;
+  height: 37px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-md-button-small {
+  border: none;
+  border-radius: 4px;
+  height: 29px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 500;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.primary-button-Xlarge:hover,
+.primary-button-large:hover,
+.primary-button-medium:hover,
+.primary-button-small:hover {
+  background-color: $red-dark;
+  cursor: pointer;
+}
+
+.primary-button-text-disabled {
+  border: none;
+  border-radius: 4px;
+  height: 22px;
+  font-size: 11px;
+  font-weight: 400;
+  color: $black-40;
+  background-color: $black-10;
+  cursor: pointer;
+}
+
+.primary-button-Xlarge-disabled {
+  border: none;
+  border-radius: 4px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $black-30;
+  background-color: $black-15;
+  width: 100%;
+  // cursor: pointer;
+}
+
+.secondary-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: $white;
+  background-color: $black-60;
+  cursor: pointer;
+}
+
+.secondary-button-medium {
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  height: 36px;
+  width: 100%;
+  color: $white;
+  background-color: $black-60;
+  cursor: pointer;
+}
+
+.secondary-button-small {
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 30px;
+  width: 100%;
+  color: $white;
+  background-color: $black-60;
+  cursor: pointer;
+}
+
+//텍스트 Medium
+.secondary-md-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: $white;
+  background-color: $black-60;
+  cursor: pointer;
+}
+
+.secondary-md-button-medium {
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 36px;
+  width: 100%;
+  color: $white;
+  background-color: $black-60;
+  cursor: pointer;
+}
+
+.secondary-md-button-small {
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  height: 30px;
+  width: 100%;
+  color: $white;
+  background-color: $black-60;
+  cursor: pointer;
+}
+
+.secondary-button-large:hover,
+.secondary-button-medium:hover,
+.secondary-button-small:hover {
+  background-color: $black-80;
+  cursor: pointer;
+}
+
+// .secondary-button-large:disabled,
+// .secondary-button-medium:disabled,
+// .secondary-button-small:disabled {
+//   color: $black-30;
+//   background-color: $black-15;
+// }
+
+.stroke-button-Xlarge {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 700;
+  color: $red;
+  background-color: transparent;
+  border: 1px solid $red;
+  cursor: pointer;
+}
+
+.stroke-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 700;
+  color: $red;
+  background-color: transparent;
+  border: 1px solid $red;
+  cursor: pointer;
+}
+
+.stroke-button-medium {
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  width: 100%;
+  height: 36px;
+  color: $red;
+  border: 1px solid $red;
+  background-color: transparent;
+  cursor: pointer;
+}
+.stroke-button-medium-black {
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  height: 44px;
+  color: $black-60;
+  border: 1px solid $black-20;
+  padding: 0 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.stroke-button-medium-black-disabled {
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  height: 47px;
+  color: $black-20;
+  border: 1px solid $black-20;
+  padding: 0 16px;
+  background-color: transparent;
+  // cursor: pointer;
+}
+
+.stroke-button-small {
+  border: none;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  width: 100%;
+  height: 30px;
+  color: $red;
+  border: 1px solid $red;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.stroke-button-Xlarge:hover,
+.stroke-button-large:hover,
+.stroke-button-medium:hover,
+.stroke-button-small:hover {
+  color: $red-dark;
+  border: 1px solid $red-dark;
+  cursor: pointer;
+}
+
+// .stroke-button-Xlarge:disabled,
+// .stroke-button-large:disabled,
+// .stroke-button-medium:disabled,
+// .stroke-button-small:disabled {
+//   color: $black-20;
+//   border: 1px solid $black-20;
+// }
+
+.stroke-sub-button-Xlarge {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 700;
+  color: $black-60;
+  background-color: transparent;
+  border: 1px solid $black-20;
+  cursor: pointer;
+}
+
+.stroke-sub-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
+  color: $black-60;
+  background-color: transparent;
+  border: 1px solid $black-20;
+  cursor: pointer;
+}
+
+.stroke-sub-button-medium {
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  width: 100%;
+  height: 36px;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.stroke-sub-button-small {
+  border: none;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  width: 100%;
+  height: 30px;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// 텍스트 사이즈 Medium인 stroke button
+.stroke-md-button-Xlarge {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 500;
+  color: $red;
+  background-color: transparent;
+  border: 1px solid $red;
+  cursor: pointer;
+}
+
+.stroke-md-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
+  color: $red;
+  background-color: transparent;
+  border: 1px solid $red;
+  cursor: pointer;
+}
+
+.stroke-md-button-medium {
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  height: 36px;
+  color: $red;
+  border: 1px solid $red;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.stroke-md-button-small {
+  border: none;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  width: 100%;
+  height: 30px;
+  color: $red;
+  border: 1px solid $red;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// 텍스트 사이즈가 Medium 이면서 sub button
+.stroke-sub-md-button-Xlarge {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 500;
+  color: $black-60;
+  background-color: transparent;
+  border: 1px solid $black-20;
+  cursor: pointer;
+}
+
+.stroke-sub-md-button-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
+  color: $black-60;
+  background-color: transparent;
+  border: 1px solid $black-20;
+  cursor: pointer;
+}
+
+.stroke-sub-md-button-medium {
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  height: 36px;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.stroke-sub-md-button-small {
+  border: none;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  width: 100%;
+  height: 30px;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+//fill-sub
+.primary-fillSub-Xlarge {
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  height: 48px;
+  color: $black-80;
+  border: 1px solid $black-20;
+  background-color: $black-10;
+  cursor: pointer;
+}
+
+.primary-fillSub-large {
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  width: 100%;
+  height: 47px;
+  color: $black-80;
+  // border: 1px solid $black-20;
+  background-color: $black-10;
+  cursor: pointer;
+}
+
+.primary-white-Xlarge {
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  width: 100%;
+  height: 47px;
+  color: $black-80;
+  border: 1px solid $black-20;
+  background-color: white;
+  cursor: pointer;
+}
+
+.primary-white-longer {
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  height: 72px;
+  color: $black-80;
+  border: 1px solid $black-20;
+  background-color: white;
+  cursor: pointer;
+}
+
+.primary-black-Xlarge {
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  height: 48px;
+  color: $black-80;
+  border: 1px solid $black-20;
+  background-color: $black-10;
+  cursor: pointer;
+}
+
+// primary, secondary disable part
+.Xlarge-disable {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 700;
+  color: $black-30;
+  background-color: $black-15;
+}
+.verify-disable {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 400;
+  color: $black-30;
+  background-color: $black-15;
+}
+
+.large-disable {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
+  color: $black-30;
+  background-color: $black-15;
+}
+
+.medium-disable {
+  border: none;
+  border-radius: 6px;
+  height: 37px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  color: $black-30;
+  background-color: $black-15;
+}
+
+.small-disable {
+  border: none;
+  border-radius: 4px;
+  height: 29px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  color: $black-30;
+  background-color: $black-15;
+}
+
+// stroke disable part
+.stroke-Xlarge-disable {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-large-disable {
+  border: none;
+  border-radius: 6px;
+  height: 44px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-medium-disable {
+  border: none;
+  border-radius: 6px;
+  height: 36px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-small-disable {
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+// stroke fillsub part
+.stroke-fillsub-Xlarge {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.stroke-fillsub-large {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-fillsub-medium {
+  border: none;
+  border-radius: 6px;
+  height: 36px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-fillsub-small {
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+// stroke md disable part
+.stroke-md-Xlarge-disable {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-md-large-disable {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-md-medium-disable {
+  border: none;
+  border-radius: 6px;
+  height: 36px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-md-small-disable {
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 400;
+  color: $black-20;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+// stroke sub disable part
+.stroke-sub-Xlarge-disable {
+  border: none;
+  border-radius: 6px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-sub-large-disable {
+  border: none;
+  border-radius: 6px;
+  height: 47px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-sub-medium-disable {
+  border: none;
+  border-radius: 6px;
+  height: 36px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}
+
+.stroke-sub-small-disable {
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 400;
+  color: $black-60;
+  border: 1px solid $black-20;
+  background-color: transparent;
+}

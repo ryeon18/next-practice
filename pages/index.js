@@ -7,27 +7,10 @@ import { Header, Divider, Loader } from "semantic-ui-react";
 import axios from "axios";
 
 export default function Home({ list }) {
-  //   const [list, setList] = useState([]);
-  //   useEffect(() => {
-  //     fetch("/data/animation.json")
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         setList(data);
-  //       });
-  //   }, [list]);
-
-  //   useEffect(() => {
-  //     fetch("/data/art.json")
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         setList(data);
-  //       });
-  //   }, [list]);
-
   return (
     <div>
       <Head>
-        <title>Home | 박세연</title>
+        <title>Home | 해피코스메틱</title>
         <meta name="description" content="박세연 넥스트테스트프로젝트"></meta>
       </Head>
 
