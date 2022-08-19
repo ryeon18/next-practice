@@ -22,7 +22,7 @@ export default function ItemList({ list }) {
                       {item.category} {item.product_type}
                     </span>
                     <strong className="num_price">
-                      ₩ {item.price.toLocaleString()}
+                      $ {item.price.toLocaleString()}
                     </strong>
                   </div>
                 </a>

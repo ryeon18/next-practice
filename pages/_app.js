@@ -1,18 +1,29 @@
 import "../styles/globals.css";
 import "../styles/main.scss";
 import "semantic-ui-css/semantic.min.css";
+import Head from "next/head";
 import Top from "../component/Top";
 import Gnb from "../component/Gnb";
 import Footer from "../component/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div style={{ width: 1000, margin: "0 auto" }}>
-      <Top />
-      <Gnb />
-      <Component {...pageProps} />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" size="32x32" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+      </Head>
+      <div style={{ width: 1000, margin: "0 auto" }}>
+        <Top />
+        <Gnb />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
+    </>
   );
 }
 
